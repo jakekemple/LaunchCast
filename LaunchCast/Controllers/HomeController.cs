@@ -12,19 +12,14 @@ namespace LaunchCast.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Message"] = "A simple data table displaying information about each rocket launch.";
+
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "A short and simple development project by Jake Kemple.";
 
             return View();
         }
